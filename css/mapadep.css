@@ -1,0 +1,13 @@
+.mapa-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#mapa {
+    max-width: 80%;
+    max-height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border: 2px solid #2B7CD3;
+}
