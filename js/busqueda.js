@@ -84,3 +84,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
             alert("No se pudo conectar con el servidor. Verifica que 'node server.js' esté corriendo.");
         });
 });
+
+function verMapa(id) {
+    window.location.href = `mapa.html?id=${id}`;
+}
