@@ -87,7 +87,7 @@ app.get('/buscarAulas', async (req, res) => {
 
 // Ruta para obtener un departamento por ID
 app.get("/mapa", (req, res) => {
-    res.sendFile(path.join(__dirname, "views", "mapa.html"));
+    res.sendFile(path.join(__dirname, "views", "MapaDep.html"));
 });
 
 app.get("/departamento/:id", (req, res) => {
