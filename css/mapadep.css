@@ -1,3 +1,17 @@
+.titulo-mapa {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: #f8f9f6;
+    border-radius: 12px;
+    color: #0b5ed7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
 .mapa-container {
     display: flex;
     justify-content: center;
@@ -10,4 +24,9 @@
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     border: 2px solid #2B7CD3;
+    transition: transform 0.3s ease;
+}
+
+#mapa:hover {
+    transform: scale(1.05);
 }
