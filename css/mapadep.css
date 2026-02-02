@@ -81,9 +81,8 @@ body {
 .zoom-controls {
     position:relative;
     top: 10px;
-    right: 10px;
+    right: 5px;
     display: block;
-    
     gap: 5px;
     z-index: 5;
 }
