@@ -55,7 +55,7 @@ app.get('/buscar', (req, res) => {
 app.get('/buscarAulas', async (req, res) => {
     try {
         const { buscar, bloque, piso } = req.query;
-        let sql = `SELECT  d.id_departamento, d.Nombre as departamento, p.Numero_piso as piso, b.Nombre as bloque
+        let sql = `SELECT  d.id_departamento, d.imagen_mapa, d.Nombre as departamento, p.Numero_piso as piso, b.Nombre as bloque
             FROM Departamento d
             JOIN Piso p ON d.Piso = p.id_piso
             JOIN Bloque b ON p.id_bloque = b.id_bloque

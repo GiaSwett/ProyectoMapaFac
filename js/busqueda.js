@@ -72,7 +72,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
                                     <strong><span style='color:#0b5ed7;'>&#127970;</span> Bloque:</strong> ${item.bloque || 'N/A'}<br>
                                         <strong><span style='color:#0b5ed7;'>&#129521;</span> Piso:</strong> ${item.piso || 'N/A'}
                                 </p>
-                                <img src="${item.imagen || 'img/imagenes_PB/default.jpg'}" alt="${item.departamento || item.Nombre}" class="miniatura mb-2">
+                                <img src="${item.imagen_mapa || 'img/imagenes_PB/default.jpg'}" alt="${item.departamento || item.Nombre}" class="miniatura mb-2">
                             </div>
                         </div>
     </div>`;
