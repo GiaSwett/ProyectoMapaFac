@@ -6,8 +6,8 @@ function mostrarDepartamentos(data) {
     const bloques = {};
 
     data.forEach(dep => {
-        const bloque = dep.Bloque;
-        const piso = dep.Piso;
+        const bloque = dep.bloque;
+        const piso = dep.piso;
 
         if (!bloques[bloque]) { // Si el bloque no existe, crearlo
             bloques[bloque] = {};
