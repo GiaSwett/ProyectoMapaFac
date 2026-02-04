@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname)));
 // Ruta para obtener todos los departamentos
 app.get("/departamento", (req, res) => {
     const sql = `SELECT  d.id_departamento, d.Nombre, d.Tipo, p.Numero_piso AS Piso, b.Nombre AS Bloque FROM Departamento d
-                JOIN piso p ON d.Piso = p.id_piso
-                JOIN bloque b ON p.id_bloque = b.id_bloque
+                JOIN Piso p ON d.Piso = p.id_piso
+                JOIN Bloque b ON p.id_bloque = b.id_bloque
                 ORDER BY b.nombre, p.numero_piso;
     `;
 
