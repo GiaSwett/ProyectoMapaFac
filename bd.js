@@ -4,7 +4,8 @@ const conexion = mysql.createConnection({
     host: "sql8.freesqldatabase.com",
     user: "sql8816222",
     password: "hs2xVcIyRq",
-    database: "sql8816222"
+    database: "sql8816222",
+    port: 3306
 });
 
 conexion.connect((err) => {
